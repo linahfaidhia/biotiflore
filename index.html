@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biotiflore Skincare | Boutique Simple</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <h1 class="logo">BIOTIFLORE</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#produits">Produits</a></li>
+          <li><a href="#panier">Mon Panier (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="produits">
+    <h2 class="section-title">Nos Soins d'Exception</h2>
+    
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400" alt="Baume Lèvres">
+        <h3>Baume Lèvres</h3>
+        <p>Hydrate vos lèvres au quotidien contre la sécheresse.</p>
+        <p class="price">4.90 TND</p>
+        <button class="add-btn" onclick="ajouterAuPanier('Baume Lèvres', 4.90)">Ajouter au panier</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=400" alt="Crème de Nuit">
+        <h3>Crème de Nuit Anti-âge</h3>
+        <p>Une crème riche pour nourrir votre peau en profondeur.</p>
+        <p class="price">24.90 TND</p>
+        <button class="add-btn" onclick="ajouterAuPanier('Crème de Nuit', 24.90)">Ajouter au panier</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400" alt="Sérum Éclat">
+        <h3>Sérum Booster d'Éclat</h3>
+        <p>Sérum concentré à la vitamine C pour illuminer le teint.</p>
+        <p class="price">28.90 TND</p>
+        <button class="add-btn" onclick="ajouterAuPanier('Sérum Éclat', 28.90)">Ajouter au panier</button>
+      </div>
+    </div>
+  </main>
+
+  <section class="container" id="panier">
+    <h2>Votre Panier</h2>
+    <div class="cart-box">
+      <ul id="cart-items">
+        <li class="empty-msg">Votre panier est vide.</li>
+      </ul>
+      <p class="total-text">Total: <span id="cart-total">0.00</span> TND</p>
+      <button class="clear-btn" onclick="viderPanier()">Vider le panier</button>
+    </div>
+  </section>
+
+</body>
+</html>
